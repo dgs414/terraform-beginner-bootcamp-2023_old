@@ -26,3 +26,19 @@ aws sts get-caller-identity
 
 ### Setting AWS CLI Env Vars
 https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
+
+### Terraform Registry
+
+https://registry.terraform.io/
+
+- **Providers** is an interface to APIs that will allow you to create resources
+- **Modules** an option to make large amounts of terraform code modular, portable and sharable.
+
+### Terraform Main Commands
+
+**Main commands:**
+-  **`init`**          Prepare your working directory for other commands
+-  **`validate`**      Check whether the configuration is valid
+-  **`plan`**          Show changes required by the current configuration
+-  **`apply`**         Create or update infrastructure
+-  **`destroy`**       Destroy previously-created infrastructure
