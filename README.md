@@ -14,3 +14,15 @@ Updated Terraform bash script
 
 - https://www.geeksforgeeks.org/chmod-command-linux/
 - https://en.wikipedia.org/wiki/Chmod
+
+### AWS CLI Installation
+
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+We can check if our AWS credentials are configured correctly by running the following command:
+```
+aws sts get-caller-identity
+```
+
+### Setting AWS CLI Env Vars
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
