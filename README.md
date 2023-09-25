@@ -42,3 +42,24 @@ https://registry.terraform.io/
 -  **`plan`**          Show changes required by the current configuration
 -  **`apply`**         Create or update infrastructure
 -  **`destroy`**       Destroy previously-created infrastructure
+
+### AWS S3 Documentation
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
+
+### AWS S3 Bucket Naming Rules
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html?icmpid=docs_amazons3_console
+
+```
+random_string.bucket_name: Creation complete after 0s [id=GtiXuoABtL4NgMvP]
+aws_s3_bucket.example: Creating...
+╷
+│ Error: validating S3 Bucket (GtiXuoABtL4NgMvP) name: only lowercase alphanumeric characters and hyphens allowed in "GtiXuoABtL4NgMvP"
+│ 
+│   with aws_s3_bucket.example,
+│   on main.tf line 25, in resource "aws_s3_bucket" "example":
+│   25: resource "aws_s3_bucket" "example" {
+╵
+```
+####  Terraform Destroy
+This will destroy resources
